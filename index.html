@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-card">
+        <div class="search">
+            <input type="text" placeholder="Search for a city...">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="weather-info">
+            <div class="current-weather">
+                <div class="location">
+                    <h2 class="city">NOIDA</h2>
+                    <p class="date">Tuesday, May 27, 2024</p>
+                </div>
+                <div class="temperature">
+                    <h1>34°C</h1>
+                    <div class="condition">
+                        <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Sunny">
+                        <span>Sunny</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail">
+                    <span class="label">Humidity</span>
+                    <span class="value">65%</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Wind</span>
+                    <span class="value">12 km/h</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Pressure</span>
+                    <span class="value">1012 hPa</span>
+                </div>
+            </div>
+            
+            <div class="forecast">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-days">
+                    <div class="day">
+                        <span>Mon</span>
+                        <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Sunny">
+                        <span>32°C</span>
+                    </div>
+                    <div class="day">
+                        <span>Tue</span>
+                        <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="Partly Cloudy">
+                        <span>34°C</span>
+                    </div>
+                    <div class="day">
+                        <span>Wed</span>
+                        <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="Cloudy">
+                        <span>27°C</span>
+                    </div>
+                    <div class="day">
+                        <span>Thu</span>
+                        <img src="https://openweathermap.org/img/wn/09d@2x.png" alt="Rain">
+                        <span>24°C</span>
+                    </div>
+                    <div class="day">
+                        <span>Fri</span>
+                        <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Sunny">
+                        <span>33°C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
